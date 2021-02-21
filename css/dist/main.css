@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: #111417;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  font-weight: 800;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+nav .navigation {
+  display: flex;
+  margin-right: 7%;
+}
+nav .navigation div[class^=nav] {
+  display: flex;
+}
+nav .navigation div[class^=nav] a {
+  padding-left: 1em;
+}
+nav .navigation div[class^=nav] a:last-child {
+  padding-right: 1em;
+}
+nav .nav-logo {
+  margin-right: 5%;
+  margin-left: 10%;
+  background-color: #fdc501;
+  color: black;
+  padding: 1.5% 0.5%;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+nav .social-icons {
+  display: flex;
+}
+nav .social-icons a {
+  padding: 1.2em 2em;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-top: 1.2em;
+}
+nav a:hover {
+  color: #fdc501;
+  border-bottom: solid 1px #fdc501;
+}
+
+.first-section {
+  position: relative;
+  color: whitesmoke;
+  background-color: #111417;
+}
+.first-section .background-image {
+  width: 100%;
+  height: 720px;
+  margin-top: 4.2%;
+}
+.first-section h1 {
+  position: absolute;
+  bottom: 65%;
+  margin-left: 10%;
+  font-weight: 700;
+  font-size: 1.6em;
+}
+.first-section h1 hr {
+  height: 1px;
+  background-color: #fdc501;
+  border: solid 1px #fdc501;
+  width: 100%;
+}
+.first-section p {
+  position: absolute;
+  bottom: 50%;
+  margin-left: 11.3%;
+  color: #57584b;
+  font-size: 1.1em;
+}
+.first-section .button-read-more {
+  position: absolute;
+  margin-left: 45%;
+  bottom: 13%;
+  background-color: #e64e04;
+  box-shadow: 1px 1px 5px black;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.first-section .button-read-more a {
+  display: block;
+  padding: 1em 2em;
+  width: 8em;
+  height: 100%;
+  text-decoration: none;
+  color: whitesmoke;
+  transition: all 0.5s ease-in-out;
+}
+.first-section .button-read-more a:hover {
+  background-color: #fdc501;
+  color: #57584b;
+  border-radius: 5px;
+}
+
+.second-section {
+  background-color: #111417;
+}
+.second-section .block-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10%;
+}
+.second-section .block-photos img {
+  width: 290px;
+  height: 300px;
+  transition: all 0.5s ease-in-out;
+}
+.second-section .block-photos img:hover {
+  opacity: 0.3;
+}
+
+.third-section {
+  background-color: #12151b;
+}
+
+.flex-article {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10%;
+  padding-bottom: 7%;
+}
+.flex-article .article-text {
+  width: 30%;
+  padding: 0 1.5%;
+  transition: all 0.5s ease-in-out;
+}
+.flex-article .article-text h1 {
+  color: #fdc501;
+  font-weight: 800;
+  padding-top: 0;
+}
+.flex-article .article-text:hover {
+  background-color: #111417;
+}
+.flex-article .second {
+  width: 46%;
+}
+.flex-article .second:hover {
+  background-color: #12151b;
+}
+
+.offer {
+  text-align: center;
+}
+.offer h1 {
+  font-weight: 800;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+.offer p {
+  font-size: 1em;
+  margin-bottom: 3%;
+}
+.offer div {
+  display: flex;
+  justify-content: center;
+}
+.offer div a {
+  display: block;
+  text-decoration: none;
+  color: whitesmoke;
+  width: 20%;
+  padding: 1% 3%;
+  margin-bottom: 5%;
+  background-color: #e64e04;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.offer div a:hover {
+  background-color: #fdc501;
+}
+
+.text-section {
+  margin: 0 15%;
+}
+.text-section .image-creators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.text-section .image-creators .creators {
+  padding-left: 5%;
+  margin-top: 5%;
+  width: 20%;
+}
+.text-section .image-creators .creators img {
+  width: 200px;
+  height: 200px;
+  transition: all 0.5s ease-in-out;
+}
+.text-section .image-creators .creators h1 {
+  color: #fdc501;
+}
+.text-section .image-creators .creators img:hover {
+  opacity: 0.4;
+}
+.text-section .image-creators .creators p {
+  padding-left: 5%;
+}
+
+h1 {
+  padding-top: 5%;
+  color: whitesmoke;
+  letter-spacing: 0.1em;
+}
+
+hr {
+  margin: 11px 0 30px;
+  width: 13%;
+  height: 0;
+  border: solid 1px #57584b;
+  transition: all 0.5s ease-in-out;
+  background-color: #57584b;
+}
+
+p {
+  color: #57584b;
+  line-height: 2;
+  margin-bottom: 5%;
+}
+
+.text-section:hover hr {
+  width: 20%;
+  border-color: #fdc501;
+  background-color: #fdc501;
+}
+
+span {
+  color: #fdc501;
+}

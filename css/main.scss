@@ -1,0 +1,243 @@
+$first-background-color: #111417;
+$second-background-color: #12151b;
+$first-color:#fdc501;
+$second-color: #e64e04;
+$paragraf-color: #57584b;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: $first-background-color;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    font-weight: 800;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    .navigation{
+        display: flex;
+        margin-right: 7%;
+        div[class^="nav"]{
+            display: flex;
+            a{
+                padding-left: 1em;
+            }
+            a:last-child{
+                padding-right: 1em;
+            }
+        }
+    }
+    .nav-logo{
+        margin-right: 5%;
+        margin-left: 10%;
+        background-color: $first-color;
+        color: black;
+        padding: 1.5% 0.5%;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    .social-icons{
+        display: flex;
+        a{
+            padding: 1.2em 2em;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        padding-top: 1.2em;
+    }
+    a:hover{
+        color: $first-color;
+        border-bottom: solid 1px $first-color;
+    }
+
+}
+.first-section{
+    position: relative;
+    color: whitesmoke;
+    background-color: $first-background-color;
+    .background-image{
+        width: 100%;
+        height: 720px;
+        margin-top: 4.2%;
+    }
+    h1{
+        position: absolute;
+        bottom: 65%;
+        margin-left: 10%;
+        font-weight: 700;
+        font-size: 1.6em;
+        hr{
+            height: 1px;
+            background-color: $first-color;
+            border: solid 1px $first-color;
+            width: 100%;
+        }
+    }
+    p{
+        position: absolute;
+        bottom: 50%;
+        margin-left: 11.3%;
+        color: $paragraf-color;
+        font-size: 1.1em;
+    }
+    .button-read-more{
+        position: absolute; 
+        margin-left: 45%;
+        bottom: 13%;
+        background-color: $second-color;
+        box-shadow: 1px 1px 5px black;
+        font-weight: bold;
+        border-radius: 5px;
+        a{
+            display: block;
+            padding: 1em 2em;
+            width: 8em;
+            height: 100%;
+            text-decoration: none;
+            color: whitesmoke;
+            transition: all 0.5s ease-in-out;
+        }
+        a:hover{
+            background-color: $first-color;
+            color: $paragraf-color;
+            border-radius: 5px;
+        }
+    }
+}
+.second-section{
+    background-color: $first-background-color;
+    .block-photos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 10%;
+        img{
+            width: 290px;
+            height:300px;
+            transition: all 0.5s ease-in-out;
+        }
+        img:hover{
+            opacity: 0.3;
+        }
+    }
+}
+.third-section{
+    background-color: $second-background-color;
+}
+.flex-article{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    padding-bottom: 7%;
+    .article-text{
+        width: 30%;
+        padding: 0 1.5%;
+        transition: all 0.5s ease-in-out;
+        h1{
+            color:$first-color;
+            font-weight: 800;
+            padding-top: 0;
+        }
+    }
+    .article-text:hover{
+        background-color: $first-background-color;
+    }
+    .second{
+        width: 46%;
+    }
+    .second:hover{
+        background-color: $second-background-color;
+    }
+}
+.offer{
+    text-align: center;
+    h1{
+        font-weight: 800;
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+    p{
+        font-size: 1em;
+        margin-bottom: 3%;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        a{
+            display: block;
+            text-decoration: none;
+            color: whitesmoke;
+            width: 20%;
+            padding: 1% 3%;
+            margin-bottom: 5%;
+            background-color: $second-color;
+            border-radius: 5px;
+            transition: all 0.5s ease-in-out;
+        }
+        a:hover{
+            background-color: $first-color;
+        }
+    }
+}
+.text-section{
+    margin: 0 15%;
+    .image-creators{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .creators{
+            padding-left: 5%;
+            margin-top: 5%;
+            width: 20%;
+            img{
+                width: 200px;
+                height: 200px;
+                transition: all 0.5s ease-in-out;
+            }
+            h1{
+                color: $first-color;
+            }
+            img:hover{
+                opacity: 0.4;
+            }
+            p{
+                padding-left: 5%;
+            }
+        }
+    }
+}
+    h1{
+        padding-top: 5%;
+        color: whitesmoke;
+        letter-spacing: 0.1em;
+    }
+    hr{
+        margin: 11px 0 30px;
+        width: 13%;
+        height: 0;
+        border: solid 1px $paragraf-color;
+        transition: all 0.5s ease-in-out;
+        background-color: $paragraf-color;
+    }
+    p{
+        color: $paragraf-color;
+        line-height: 2;
+        margin-bottom: 5%;
+    }
+.text-section:hover{
+    hr{
+        width: 20%;
+        border-color: $first-color;
+        background-color: $first-color;
+    }
+}
+span{
+    color: $first-color;
+}
