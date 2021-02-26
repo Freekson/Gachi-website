@@ -1,0 +1,377 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+p, h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.top {
+  height: 800px;
+  width: 100%;
+  background: url(../../images/First-image.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+  color: #FFf;
+}
+.top h1 {
+  font-size: 3.5em;
+  font-weight: normal;
+  text-shadow: 2px 2px 5px #0a0a0a;
+  margin-top: 15%;
+}
+.top h2 {
+  font-size: 2em;
+  font-weight: normal;
+  text-shadow: 2px 2px 5px #0a0a0a;
+  line-height: 0;
+}
+.top p {
+  margin-top: 18%;
+}
+.top p a {
+  padding: 25px 80px;
+  background: #D9D9D9;
+  color: #533e1a;
+  text-decoration: none;
+  transition: 0.7s;
+  box-shadow: 2px 2px 5px #0a0a0a;
+}
+.top p a:hover {
+  background: #533e1a;
+  color: #D9D9D9;
+}
+
+.main-menu {
+  width: 100%;
+  position: fixed;
+  padding: 15px 0;
+  background: whitesmoke;
+  box-shadow: 0 0 5px #0a0a0a;
+  z-index: 1;
+}
+
+.menu-link {
+  width: 450px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.menu-link li {
+  width: 90px;
+  float: left;
+  text-align: center;
+  padding: 10px 0;
+}
+.menu-link li a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 1.2em;
+}
+.menu-link li a:hover {
+  text-decoration: underline;
+}
+
+.menu-visible {
+  display: none;
+}
+
+.center-offer {
+  width: 92%;
+  min-width: 120px;
+  margin: 0 auto;
+  padding: 3% 0;
+}
+
+.offer {
+  width: 100%;
+  padding-bottom: 5%;
+  background-color: whitesmoke;
+  overflow: auto;
+  color: #262626;
+}
+
+.title-offer {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.discription-offer {
+  text-align: center;
+  line-height: 5px;
+  margin-bottom: 5%;
+}
+
+.box-offer {
+  width: 18%;
+  height: 390px;
+  float: left;
+  margin-right: 2.3%;
+  padding: 2.5%;
+  background: #fafafa;
+  border: 1px solid gainsboro;
+}
+.box-offer ul {
+  height: 260px;
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9em;
+}
+.box-offer ul li {
+  padding: 3px 0;
+}
+
+.box-offer:hover {
+  box-shadow: 0 0 10px #c8c8c8;
+}
+
+.box-offer:last-child {
+  margin-right: 0;
+}
+
+.name-offer {
+  margin-bottom: 6%;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.prise-offer {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 5%;
+}
+
+.box-vip-offer {
+  background-color: #533e1a;
+  border: 1px soled gainsboro;
+  color: whitesmoke;
+}
+
+.box-vip-offer:hover {
+  box-shadow: 0 0 10px #5d4824;
+}
+
+.diet {
+  width: 100%;
+  padding-bottom: 5%;
+  background-image: url(../../images/Second-image.jpg);
+  background-size: cover;
+  overflow: auto;
+}
+.diet h2 {
+  color: #533e1a;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.diet .title-offer, .diet .discription-offer {
+  color: white;
+  text-shadow: 0 0 3px #0a0a0a;
+}
+
+.personal-diet {
+  width: 31%;
+  float: left;
+  margin-left: 1.5%;
+  margin-right: 2%;
+  padding: 2%;
+  background: white;
+}
+.personal-diet p {
+  margin-bottom: 10px;
+}
+
+.more-diet {
+  width: 56%;
+  float: left;
+  padding: 2%;
+  background: white;
+}
+.more-diet h3 {
+  color: #5d4824;
+}
+
+.title-diet {
+  margin-top: 5%;
+}
+
+.contact {
+  width: 100%;
+  padding-bottom: 2%;
+  background: whitesmoke;
+  overflow: auto;
+}
+
+.window-form {
+  width: 97.7%;
+  padding: 1%;
+  background: #fafafa;
+  border: 1px soled #c8c8c8;
+}
+.window-form h3 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+.window-form input {
+  width: 47%;
+  padding: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  border: 1px solid gainsboro;
+  font-size: 1em;
+}
+.window-form input:nth-of-type(2n) {
+  margin-right: 0;
+}
+.window-form input:focus {
+  outline: none;
+  border: 1px solid #dbc092;
+}
+.window-form textarea {
+  width: 97.5%;
+  height: 130px;
+  padding: 1%;
+  border: 1px solid gainsboro;
+  font-size: 1em;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+.window-form textarea:focus {
+  outline: none;
+  border: 1px solid #dbc092;
+}
+.window-form .send_form {
+  margin-top: 1%;
+  padding: 15px 30px;
+  background: #533e1a;
+  border: 1px solid #533e1a;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: background 0.5s border 0.5s;
+}
+.window-form .send_form:hover {
+  background: #38280e;
+  border: 1px solid #38280e;
+}
+
+footer {
+  padding: 1% 0;
+  background: #38280e;
+  color: #8e6f3d;
+  text-align: center;
+  font-style: 0.8em;
+}
+
+@media screen and (max-width: 1050px) {
+  .box-offer {
+    width: 42%;
+    height: auto;
+    margin-bottom: 2.3%;
+    margin-right: 0;
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .top {
+    height: 800px;
+  }
+  .top h1 {
+    font-size: 2.5em;
+    margin-top: 25%;
+  }
+  .top h2 {
+    font-size: 1.5em;
+    line-height: 30px;
+  }
+  .top p a {
+    padding: 20px 60px;
+  }
+
+  .main-menu {
+    top: -250px;
+    padding: 0;
+  }
+  .main-menu .menu-link {
+    width: 100%;
+  }
+  .main-menu li {
+    width: 100%;
+    float: none;
+    padding: 10px 0;
+  }
+  .main-menu .menu-visible {
+    display: block;
+    padding: 15px;
+    padding: 30px 10px;
+    background: #533e1a;
+    text-align: center;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+
+  .title-offer {
+    margin: 5% 0;
+    line-height: 45px;
+  }
+
+  .discription-offer {
+    line-height: 25px;
+  }
+
+  .box-offer {
+    width: 93%;
+    height: auto;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  .box-offer ul {
+    height: auto;
+  }
+
+  .more-diet, .personal-diet {
+    width: 90%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 3%;
+    margin: 3%;
+    text-align: center;
+  }
+
+  .window-form h3 {
+    text-align: center;
+  }
+  .window-form input {
+    width: 93%;
+    padding: 3%;
+    margin-right: 0;
+    margin-bottom: 3%;
+  }
+  .window-form textarea {
+    width: 93%;
+    padding: 3%;
+  }
+
+  .send_form {
+    margin-top: 3%;
+  }
+
+  footer {
+    padding: 3% 0;
+  }
+}
+.error {
+  margin-top: 10px;
+  padding: 15px 10px;
+  border: 1px solid #ffc1c1;
+  background-color: #f2dede;
+  color: #83261c;
+}
