@@ -25,6 +25,7 @@ body{
             display: flex;
             a{
                 padding-left: 1em;
+                padding-bottom: 1em;
 
             }
             a:last-child{
@@ -54,7 +55,7 @@ body{
         color: white;
         text-align: center;
         padding-top: 1.2em;
-        transition: all 0.5s ease-in-out;
+        transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     }
     a:hover{
         color: $first-color;
@@ -67,25 +68,33 @@ body{
     width: 100%;
     display: none;
     position: fixed;
-    padding: 15px 0;
+    padding: 2% 0;
     background: black;
     box-shadow: 0 0 5px #0a0a0a;
     z-index: 1;
+    background-color: $first-color;
     ul{
+        list-style: none;
         text-align: center;
+        padding: 0;
         li{
             a{
                 text-decoration: none;
                 color: whitesmoke;
+                font-weight: 800;
             }
             a:hover{
-                background-color: black;
+                background-color: $first-color;
             }
         }
     }
     p{
         margin: 0;
     }
+    .menu-visible{
+        transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
 }
 .first-section{
     position: relative;
@@ -131,7 +140,7 @@ body{
             width: 8em;
             text-decoration: none;
             color: whitesmoke;
-            transition: all 0.5s ease-in-out;
+            transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
         }
         a:hover{
             background-color: $first-color;
@@ -146,11 +155,12 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0 10%;
+        margin: 0 1%;
         img{
             width: 290px;
             height:300px;
-            transition: all 0.5s ease-in-out;
+            transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+            padding: 1%;
         }
         img:hover{
             opacity: 0.3;
@@ -160,6 +170,11 @@ body{
 .third-section{
     background-color: $second-background-color;
 }
+.fourth-section{
+    .flex-article{
+        padding-bottom: 0;
+    }
+}
 .flex-article{
     display: flex;
     flex-wrap: wrap;
@@ -168,7 +183,7 @@ body{
     .article-text{
         width: 30%;
         padding: 0 1.5%;
-        transition: all 0.5s ease-in-out;
+        transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
         h1{
             color:$first-color;
             font-weight: 800;
@@ -209,7 +224,7 @@ body{
             margin-bottom: 5%;
             background-color: $second-color;
             border-radius: 5px;
-            transition: all 0.5s ease-in-out;
+            transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
         }
         a:hover{
             background-color: $first-color;
@@ -225,7 +240,7 @@ body{
     margin-bottom: 5%;
     background-color: $second-color;
     border-radius: 5px;
-    transition: all 0.5s ease-in-out;
+    transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 a:hover{
     background-color: $first-color;
@@ -241,7 +256,7 @@ a:hover{
             width: 20%;
             img{
                 height: 200px;
-                transition: all 0.5s ease-in-out;
+                transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
             }
             h1{
                 color: $first-color;
@@ -265,7 +280,7 @@ a:hover{
         width: 13%;
         height: 0;
         border: solid 1px $paragraf-color;
-        transition: all 0.5s ease-in-out;
+        transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
         background-color: $paragraf-color;
     }
     p{
@@ -283,6 +298,7 @@ a:hover{
 span{
     color: $first-color;
 }
+
 .fifth-section{
     background-color: $first-color;
     padding: 5% 0;
@@ -352,7 +368,7 @@ span{
                 font-weight: 800;
                 letter-spacing: 0.2em;
                 text-transform: uppercase;
-                transition: all 0.5s ease-in-out;
+                transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
             }
             button:hover{
                 background-color: $second-color;
@@ -387,7 +403,7 @@ footer{
                 text-decoration: none;
                 font-size: 2.5em;
                 color: #2a2d32;
-                transition: all 0.5s ease-in-out;
+                transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
             }
             a:hover{
                 color: whitesmoke;
@@ -398,13 +414,12 @@ footer{
     }
 
 }
-
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1160px){
     .second-section{
         .block-photos{
             img{
-                width: 40%;
-                margin: 3%;
+                width: 30%;
+                margin: 1%;
             }
         }
     }
@@ -425,15 +440,27 @@ footer{
                 width: 40%;
             }
         }
+        .image-creators{
+            text-align: center;
+            .creators{
+                width: 40%;
+            }
+        }
+    }
+    .none-adaptive{
+        .social-icons{
+            display: none;
+        }       
     }
 }
 @media screen and (max-width: 768px){
     body > header > article > section.fourth-section > article:nth-child(3) > div > div {
         display: block;
         .creators{
-            width: 90%;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            width: 100%;
             img{
                 width: 90%;
                 height: 90%;
@@ -546,7 +573,9 @@ footer{
             aside{
                 margin: 10%;
                 margin-left: 30%;
-                
+                p:first-child{
+                    display: none;
+                }
             }
         }
     }
