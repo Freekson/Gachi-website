@@ -92,6 +92,7 @@ body {
   position: relative;
   color: whitesmoke;
   background-color: #111417;
+  text-align: center;
 }
 .first-section .background-image {
   width: 100%;
@@ -101,7 +102,7 @@ body {
 .first-section h1 {
   position: absolute;
   bottom: 65%;
-  margin-left: 10%;
+  margin-left: 5%;
   font-weight: 700;
   font-size: 1.6em;
 }
@@ -112,6 +113,7 @@ body {
   width: 100%;
 }
 .first-section p {
+  margin-top: 10%;
   position: absolute;
   bottom: 50%;
   margin-left: 11.3%;
@@ -119,9 +121,11 @@ body {
   font-size: 1.1em;
 }
 .first-section .button-read-more {
+  margin-bottom: 10%;
+  margin-top: 5%;
   position: absolute;
   margin-left: 45%;
-  bottom: 13%;
+  bottom: 5%;
   background-color: #e64e04;
   box-shadow: 1px 1px 5px black;
   font-weight: bold;
@@ -250,9 +254,9 @@ a:hover {
   flex-wrap: wrap;
 }
 .text-section .image-creators .creators {
-  padding-left: 5%;
   margin-top: 5%;
   width: 20%;
+  padding-left: 5%;
 }
 .text-section .image-creators .creators img {
   height: 200px;
@@ -266,6 +270,9 @@ a:hover {
 }
 .text-section .image-creators .creators p {
   padding-left: 5%;
+}
+.text-section .image-creators .creators:first-child {
+  padding-left: 0;
 }
 
 h1 {
@@ -398,6 +405,7 @@ footer {
 footer ul {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 footer ul li {
   margin-left: 2%;
@@ -455,6 +463,7 @@ footer ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    padding-left: 0%;
   }
   body > header > article > section.fourth-section > article:nth-child(3) > div > div .creators img {
     width: 90%;
@@ -504,17 +513,17 @@ footer ul li a:hover {
     margin-bottom: 0;
   }
   .first-section h1 hr {
-    width: 50%;
+    width: 95%;
   }
   .first-section p {
     position: relative;
-    margin: 5% 5% 10% 20%;
+    margin: 5% 5% 10% 10%;
     width: 80%;
   }
   .first-section .button-read-more {
     position: relative;
     width: 25%;
-    margin-left: 0;
+    margin-left: -10%;
   }
   .first-section .button-read-more a {
     background-color: #e64e04;
@@ -526,8 +535,8 @@ footer ul li a:hover {
     margin-top: 0%;
   }
   .second-section .block-photos img {
-    width: 45%;
-    margin: 1%;
+    width: 75%;
+    margin: 2%;
   }
 
   .third-section .flex-article {
